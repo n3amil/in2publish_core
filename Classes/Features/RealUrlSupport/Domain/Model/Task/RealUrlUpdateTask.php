@@ -87,5 +87,6 @@ class RealUrlUpdateTask extends AbstractTask
             $realUrlDataHandler->processCmdmap_postProcess('move', $table, $identifier);
             $realUrlDataHandler->processDatamap_afterDatabaseOperations('update', $table, $identifier, $data, $cdh);
         }
+        return true;
     }
 }
